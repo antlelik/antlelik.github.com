@@ -1,0 +1,54 @@
+header, footer, article, section, hgroup, nav, figure, aside{display: block;}
+body{
+	margin:0;
+	color:#000;
+	font:12px/15px Arial, Helvetica, sans-serif;
+	background:#fff;
+	min-width:904px;
+}
+img{border-style:none;} 
+a{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+input, textarea, select{
+	font:100% arial,sans-serif;
+	vertical-align:middle;
+}
+form, fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+#header{
+	width:100%;
+}
+#header .logo{
+	float:left;
+	width:167px;
+	height:37px;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin:1px 0 0;
+	background:url(../images/logo.gif) no-repeat;
+}
+#header .logo a{
+	display:block;
+	height:100%;
+}
+#main{
+	width:904px;
+	margin:0 auto;
+}
+#content{
+	float:left;
+	width:579px;
+}
+aside{
+	float:right;
+	width:203px;
+}
+#footer{
+	width:100%;
+}
