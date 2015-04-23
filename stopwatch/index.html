@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Stopwatch</title>
+	<link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="info-block">
+			<span>You can press keys on keyboard too:</span>
+			<span class="info">S - Start/Stop</span>
+			<span class="info">L - Lap</span>
+			<span class="info">R - Reset</span>
+		</div>
+		<div class="columns">
+			<div class="col">
+				<div class="stopwatch-section">
+					<div class="btn-holder">
+						<button type="button" class="btn-start">Start</button>
+						<button type="button" class="btn-lap">Lap</button>
+						<button type="button" class="btn-reset">Reset</button>
+					</div>
+					<div class="timer"></div>
+					<div class="result-list"></div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="stopwatch-section-1">
+					<div class="btn-holder">
+						<button type="button" class="btn-start">Start</button>
+						<button type="button" class="btn-lap">Lap</button>
+						<button type="button" class="btn-reset">Reset</button>
+					</div>
+					<div class="timer"></div>
+					<div class="result-list"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		window.stopwatch1 = new stopwatch ('.stopwatch-section');
+		window.stopwatch2 = new stopwatch ('.stopwatch-section-1');
+	</script>
+</body>
+</html>
