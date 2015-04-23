@@ -31,12 +31,12 @@
 	StopWatch.prototype = {
 		pressStartStop: function(node) {
 			var _this = this;
-			if (node.innerText === 'Stop') {
-				node.innerText = 'Start';
+			if (node.textContent === 'Stop') {
+				node.textContent = 'Start';
 				_this.stop();
 			} else {
 				_this.start();
-				node.innerText = 'Stop';
+				node.textContent = 'Stop';
 			}
 		},
 
@@ -96,7 +96,7 @@
 
 		// push time to page
 		drawTime: function() {
-			this.timerHolderNode.innerText = this.formatTime(this.intervalPassed);
+			this.timerHolderNode.textContent = this.formatTime(this.intervalPassed);
 		},
 
 		// create format for timer
@@ -157,7 +157,7 @@
 			this.drawTime();
 			this.lap = [];
 			this.drawLaps();
-			this.btnStartStop.innerText = 'Start';
+			this.btnStartStop.textContent = 'Start';
 		},
 
 		laps: function() {
@@ -176,7 +176,7 @@
 				return;
 			} else {
 				var _this = this;
-				this.lapHolderNode.innerText = '';
+				this.lapHolderNode.textContent = '';
 
 				this.lap.forEach(function(element, index) {
 					var lapWrapper = document.createElement('div');
@@ -191,7 +191,7 @@
 					lapWrapper.appendChild(lapItem);
 					lapItem.classList.add('result-holder');
 
-					lapItem.innerText = _this.formatTime(_this.lap[index]);
+					lapItem.textContent = _this.formatTime(_this.lap[index]);
 					_this.lapHolderNode.appendChild(lapWrapper);
 				});
 			}

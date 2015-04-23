@@ -190,23 +190,23 @@ Calculation.prototype = {
 	bindEvents: function () {
 		var _this = this;
 		this.sumNode.addEventListener('click', function(){
-			_this.resultArea.innerText = _this.operationList.sum(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
+			_this.resultArea.textContent = _this.operationList.sum(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
 			_this.showResult();
 		}, false);
 		this.subNode.addEventListener('click', function(){
-			_this.resultArea.innerText = _this.operationList.sub(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
+			_this.resultArea.textContent = _this.operationList.sub(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
 			_this.showResult();
 		}, false);
 		this.mulNode.addEventListener('click', function(){
-			_this.resultArea.innerText = _this.operationList.mul(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
+			_this.resultArea.textContent = _this.operationList.mul(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
 			_this.showResult();
 		}, false);
 		this.divNode.addEventListener('click', function(){
-			_this.resultArea.innerText = _this.operationList.div(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
+			_this.resultArea.textContent = _this.operationList.div(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
 			_this.showResult();
 		}, false);
 		this.modNode.addEventListener('click', function(){
-			_this.resultArea.innerText = _this.operationList.mod(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
+			_this.resultArea.textContent = _this.operationList.mod(parseFloat(_this.operator1.value), parseFloat(_this.operator2.value));
 			_this.showResult();
 		}, false);
 
@@ -224,11 +224,11 @@ Calculation.prototype = {
 	},
 
 	makeMessage: function () {
-		this.resultArea.innerText = 'Please write only numbers';
+		this.resultArea.textContent = 'Please write only numbers';
 	},
 
 	removeMessage: function () {
-		this.resultArea.innerText = '';
+		this.resultArea.textContent = '';
 	},
 
 	disableButtons: function() {
