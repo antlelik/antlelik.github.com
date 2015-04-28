@@ -80,6 +80,7 @@ form, fieldset{
 	opacity: 0;
 	top: 100%;
 	left: 0;
+	white-space: nowrap;
 	margin-top: 5px;
 	padding: 3px 7px;
 	position: absolute;
