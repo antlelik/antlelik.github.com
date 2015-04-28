@@ -1,0 +1,75 @@
+header, footer, article, section, hgroup, nav, figure, aside{display: block;}
+body{
+	margin: 0;
+	color: #000;
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	background: #fff;
+	min-width: 800px;
+}
+img{border-style: none;} 
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover{text-decoration: underline;}
+input, textarea, select{
+	font: 100% arial,sans-serif;
+	vertical-align: middle;
+}
+form, fieldset{
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+#wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.box {
+	padding: 20px 0;
+}
+.box:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+div[class*=area]  {
+	background: rgb(63, 81, 181);
+	color: #ddd;
+	width: 42%;
+	padding: 1% 3%;
+	margin: 0 1%;
+	float: left;
+}
+div[class*=block] {
+	background: rgb(248, 187, 208);
+	color: #333;
+	margin: 0 1%;
+	width: 21%;
+	padding: 0 1%;
+	float: left;
+}
+.col {
+	width: 18%;
+	padding: 0 1%;
+	float: left;
+	background: rgb(230, 238, 156);
+	color: #333;
+}
+.col:nth-child(2n) {
+	background: rgb(212, 225, 87);
+}
+.block-2 {
+	border: 14px solid rgb(236, 64, 122);
+	border-width: 17px 0;
+}
+.another-block-2 {
+	background: rgb(63, 81, 181);
+	border: solid rgb(236, 64, 122);
+	border-width: 13px 0;
+}
+.col-2 {
+	border: 14px solid rgb(192, 202, 51);
+	border-width: 17px 0;
+}
