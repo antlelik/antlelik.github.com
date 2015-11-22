@@ -39,6 +39,7 @@ form, fieldset{
 	height: 550px;
 	background: #ededed;
 	position: relative;
+	background-image: url(../bg.gif);
 }
 #unit {
 	width: 50px;
